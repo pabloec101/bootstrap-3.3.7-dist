@@ -1,0 +1,31 @@
+<div class="row" ng-controller="MasterCtrl">
+    <!-- con el siguiente div se define una columna y se indica cómo mostrar dicha columna de acuerdo al dispositivo donde se verá. Bootstrap define un grid de 12 columnas.
+    col-xs-6, indica que en dispositivos pequeños se utilizarán 6 columnas de las 12 disponibles.
+    col-md-6, indica que en dispositivos desktop utilizará 6 columnas
+    col-md-offset-3 indica que en desktop (md) rellena con espacios 3 columnas a la izquierda y 3 a la derecha, es decir, lo centra.
+    text-center, centra la imagen q se contiene en el div (img/logo)
+     -->
+    <div class="col-xs-6 col-xs-offset-3 col-md-6 col-md-offset-3 text-center">
+      <a href="#" class="thumbnail">
+        <img src="img/logo.png" alt="logo">
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <button type="button" class="btn btn-primary">facebook</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <button type="button" class="btn btn-info">Ingresar</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <p>No estás registrado?</p>
+    </div>
+    <div class="col-md-6 text-center">
+      <button type="button" class="btn btn-info" ng-click="goto('register')">Registrate</button>
+    </div>
+</div>
