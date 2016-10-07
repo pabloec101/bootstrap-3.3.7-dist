@@ -1,0 +1,11 @@
+<div ng-controller="StationCtrl">
+	<div class="row" class="col-md-12">
+		<table class="table col-md-12" >
+			<tbody>
+				<tr ng-repeat="station in stations">
+					<th scope="row" ng-click="gotoPrograms(station)">{{station.name}}</th>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

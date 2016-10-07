@@ -1,8 +1,7 @@
-youRadioApp.factory('loginService', loginService); 
+youRadioApp.factory('loginService',['localStorageService',loginService] ); 
 
-loginService.$inject = [];
 
-function loginService() {
+function loginService(localStorageService) {
 
     var service = {
         login: loginFunction
@@ -10,6 +9,8 @@ function loginService() {
     return service;
 
     function loginFunction(username, password) {
+    	localStorageService.set("token", "XXSDGAS4355543SSADFSAE53W4");
+    	localStorageService.set("username", username);
  	   return "ok";
     };
 }

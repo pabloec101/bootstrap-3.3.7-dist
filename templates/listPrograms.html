@@ -1,0 +1,12 @@
+<div ng-controller="ProgramCtrl">
+	{{tittle}}
+	<div class="row" class="col-md-12">
+		<table class="table col-md-12" >
+			<tbody>
+				<tr ng-repeat="program in programs">
+					<th scope="row">{{program.name}}</th>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

@@ -3,9 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!--<meta name="viewport" content="initial-scale=1.0,width=device-width"/>-->
+    <!--<meta name="viewport" content="initial-scale=2.0,width=device-width"/>-->
+    <!--<meta name="viewport" content="width=device-width, maximum-scale=3,minimum-scale=0.5" />-->
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no"/>
+
+
+
     <title>YouRadio</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/screenstyle.css">
+    <link rel="stylesheet" media="screen and (orientation: portrait)" href="screenstyle.css" />
+    <link rel="stylesheet" media="screen and (orientation: landscape)" href="screenstyle.css" />
+    <link rel="stylesheet" media="screen" href="screenstyle.css" />
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/angular.min.js"></script>
     <script src="js/angular-ui-router.min.js"></script>
@@ -16,9 +28,14 @@
     <script src="js/angular/controllers/login-ctrl.js"></script>
     <script src="js/angular/controllers/register-ctrl.js"></script>
     <script src="js/angular/controllers/contact-ctrl.js"></script>
+    <script src="js/angular/controllers/station-ctrl.js"></script>
+    <script src="js/angular/controllers/program-ctrl.js"></script>
+    <script src="js/angular/services/localStorageService.js"></script>
     <script src="js/angular/services/login-service.js"></script>
     <script src="js/angular/services/register-service.js"></script>
     <script src="js/angular/services/contact-service.js"></script>
+    <script src="js/angular/services/station-service.js"></script>
+    
   </head>
   <body>
     <!-- 
